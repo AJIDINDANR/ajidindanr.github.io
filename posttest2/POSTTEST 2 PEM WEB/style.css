@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #ecb630;
+    font-family: Arial, sans-serif;
+}
+
+/* Style header */
+header {
+    color: #faf9f7;
+    text-align: center;
+    height: 30vh;
+    margin-top: 10px;
+    background-image: url(background.jpeg);
+    background-size: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #db7753;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #f4f7f6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #df3e15;
+}
+
+/* Style sections */
+.section {
+    background-color: #f5d6a4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Style about me section */
+.about-me {
+    text-align: center;
+}
+
+.about-me img {
+    max-width: 16%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Style hijab list */
+.hijab-list {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hijab-list img {
+    max-width: 25%;
+    margin: 10px;
+    border: 1px solid #f5d6a4;
+    border-radius: 5px;
+}
+
+/* Style footer */
+footer {
+    background-color: #dda4a4;
+    color: #550c0c;
+    text-align: center;
+    padding: 10px 0;
+}
