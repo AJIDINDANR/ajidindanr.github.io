@@ -1,0 +1,229 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Default light mode styles */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Add other dark mode styles here */
+
+/* Toggle switch styles */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+}
+
+.theme-switch label {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    margin: 0;
+}
+
+.theme-switch input[type="checkbox"] {
+    display: none;
+}
+
+.theme-switch input[type="checkbox"] + label::before {
+    content: "";
+    width: 30px;
+    height: 15px;
+    background-color: #a85252;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.theme-switch input[type="checkbox"]:checked + label::before {
+    background-color: #2196F3; /* Blue color for the toggle when dark mode is on */
+    left: 15px;
+}
+
+
+
+/* Apply a background color to the body */
+body {
+    background-color: #ecb630;
+    font-family: Arial, sans-serif;
+}
+
+/* Style header */
+header {
+    color: #faf9f7;
+    text-align: center;
+    height: 30vh;
+    margin-top: 10px;
+    background-image: url(background.jpeg);
+    background-size: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #db7753;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #f3f4f4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #df3e15;
+}
+
+/* Style sections */
+.section {
+    background-color: #f5d6a4;
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+/* Style about me section */
+.about-me {
+    text-align: center;
+}
+
+.about-me img {
+    max-width: 16%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Style hijab list */
+.hijab-list {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hijab-list img {
+    max-width: 25%;
+    margin: 10px;
+    border: 1px solid #f5d6a4;
+    border-radius: 5px;
+}
+
+/* Style footer */
+footer {
+    background-color: #dda4a4;
+    color: #550c0c;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style form container */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+.form label {
+    font-size: 18px;
+    color: #c37575;
+    border-bottom: 1px solid black; 
+}
+
+
+/* Style input fields */
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style input icons */
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #888;
+    font-size: 20px;
+}
+
+/* Style submit button */
+.form button[type="submit"] {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #0d6efd;
+}
+
+.dark-mode .form-group {
+    color: white;
+}
+
+/* Style input fields */
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    /* Hapus border berikut untuk menghilangkan kotak putih */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
